@@ -4,6 +4,7 @@ import torch
 from torch import nn
 from torch.nn import functional as F
 from typing import Union, Type, List, Tuple
+import ptwt
 
 from dynamic_network_architectures.building_blocks.helper import get_matching_convtransp
 
