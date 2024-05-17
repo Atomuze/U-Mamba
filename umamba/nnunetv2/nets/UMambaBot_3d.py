@@ -108,7 +108,7 @@ class MambaLayer(nn.Module):
       B, C = x.shape[:2]
       assert C == self.dim
       wavelet = 'db6'
-      level = 1
+      level = 5
       coeffs = ptwt.wavedec3(x, wavelet, level=level)
       num_coeffs = coeffs[0].numel()
       coeffs_shape = coeffs[0].shape
